@@ -18,7 +18,7 @@ const CARD_RANK_SORTED = [
   "2",
 ] as const;
 
-test("compare rank", () => {
+test("CardRankの比較が全パターン正しい", () => {
   const cardRanks = CARD_RANK_SORTED.map((r) => new CardRank(r));
 
   for (let i = 0; i < cardRanks.length; i++) {
